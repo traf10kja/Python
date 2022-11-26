@@ -1,0 +1,48 @@
+# hw_ex_1_less_1
+d = (int(input('Введите день недели ')))
+if (d == 6) or (d == 7):
+    print('yes')
+else:
+    print('no')
+
+# hw_ex_2_less_1
+for x in 1, 0:
+    for y in 1, 0:
+        for z in 1, 0:
+            print(f"{x = } {y = } {z = }  {not(x or y or z) == (not x and not y and not z)}")
+
+# hw_ex_3_less_1
+x = (int(input('Введите x ')))
+y = (int(input('Введите y ')))
+
+if x >= 0 and y >= 0:
+    print('1')
+elif x >= 0 and y <= 0:
+    print('4')
+elif x <= 0 and y <= 0:
+   print('3')
+else:
+    print('2')
+
+# hw_ex_4_less_1
+number = (int(input('Введите номер четверти ')))
+
+if number == 1:
+    print('х от 0 до +∞. y от 0 до +∞')
+elif number == 2:
+    print('х от -∞ до 0. y от 0 до +∞')
+elif number == 3:
+    print('х от -∞ до 0. y от -∞ до 0')
+elif number == 3:
+    print('х от 0 до +∞. y от -∞ до 0')
+else:
+    print('Некорректно указан номер четверти')
+
+## hw_ex_5_less_1
+x1 = float(input('Введите х1: '))
+y1 = float(input('Введите y1: '))
+x2 = float(input('Введите х2: '))
+y2 = float(input('Введите y2: '))
+import math
+sqrt = round(math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2),2)
+print(f'Расстояние от первой до второй точки составляет {sqrt}')
